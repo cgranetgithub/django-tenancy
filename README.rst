@@ -55,7 +55,7 @@ The tenant-specific models will subclass the ``TenantModel`` class provided by *
 For instance, each tenant will have projects and reports. Here is how ``myapp/models.py`` will look like:
 :: 
    
-   from tenancy.models import AbstractTenant
+   from tenancy.models import AbstractTenant, TenantModel
 
    class MyTenantModel(AbstractTenant):
       name = models.CharField(max_length=50)
